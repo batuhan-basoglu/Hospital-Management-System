@@ -1,6 +1,17 @@
-# Hospital-Patient Management System Monorepo
+# Hospital-Patient Management System
 ![logo](design/logo.png)
 
+## Description
+
+A Hospital-Patient Management System Project made using the React.js using software design & architecture methods.
+
+## Authors
+
+- Anthony Aoun
+- Batuhan Basoglu
+- Chethin Manage
+- Ruchira Perera
+- William Stewart
 
 ## Run project locally
 
