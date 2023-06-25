@@ -24,7 +24,7 @@
     "react-redux": "^7.2.2",
     "react-router-dom": "5.x",
     "react-router-redux": "^4.0.8",
-    "react-scripts": "4.0.0",
+    "react-scripts": "5.0.1",
     "react-virtualized-auto-sizer": "1.x",
     "react-window": "1.x",
     "redux": "^4.0.5",
