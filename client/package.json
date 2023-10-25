@@ -8,7 +8,7 @@
     "@material-ui/icons": "4.x",
     "@material-ui/lab": "^4.0.0-alpha.56",
     "base-shell": "1.x",
-    "crypto-js": "^4.0.0",
+    "crypto-js": "^4.2.0",
     "github-markdown-css": "4.x",
     "immutable": "^4.0.0-rc.12",
     "intl": "1.x",
