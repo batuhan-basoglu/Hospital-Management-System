@@ -1,21 +1,16 @@
-name: Dependabot auto-approve
-on: pull_request
+name: Auto Approve Dependabot
+uses: cognitedata/auto-approve-dependabot-action@v3.0.1
 
-permissions:
-  pull-requests: write
+# Trigger the workflow on pull request
+on: pull_request_target
 
 jobs:
-  dependabot:
+  autoapprove:
+    name: Auto-Approve a PR by dependabot
     runs-on: ubuntu-latest
-    if: github.actor == 'dependabot[bot]'
     steps:
-      - name: Dependabot metadata
-        id: metadata
-        uses: dependabot/fetch-metadata@v1
+      - name: Auto approve
+        uses: cognitedata/auto-approve-dependabot-action@v3.0.1
+        if: github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
         with:
-          github-token: "${{ secrets.GIT_TOKEN }}"
-      - name: Approve a PR
-        run: gh pr review --approve "$PR_URL"
-        env:
-          PR_URL: ${{github.event.pull_request.html_url}}
-          GITHUB_TOKEN: ${{secrets.GIT_TOKEN}}
+          github-token: ${{ secrets.GIT_TOKEN }}
