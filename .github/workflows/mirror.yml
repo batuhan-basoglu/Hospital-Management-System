@@ -28,3 +28,14 @@ jobs:
         with:
           source-repo: "git@github.com:batuhan-basoglu/Hospital-Management-System.git"
           destination-repo: "git@codeberg.org:batuhan-basoglu/Hospital-Management-System.git"
+
+  forgejo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mirror to Forgejo
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.ACTIONS_SSH_KEY }}
+        with:
+          source-repo: "git@github.com:batuhan-basoglu/Hospital-Management-System.git"
+          destination-repo: "git@git.batuhan.basoglu.co:batuhan-basoglu/Hospital-Management-System.git"
