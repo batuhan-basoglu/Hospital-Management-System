@@ -8,7 +8,7 @@ A Hospital-Patient Management System Project made using the React.js using softw
 ## Authors
 
 - Anthony Aoun
-- Batuhan Basoglu
+- Batuhan Berk Başoğlu
 - Chethin Manage
 - Ruchira Perera
 - William Stewart
