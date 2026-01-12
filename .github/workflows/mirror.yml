@@ -18,17 +18,6 @@ jobs:
           source-repo: "git@github.com:batuhan-basoglu/Hospital-Management-System.git"
           destination-repo: "git@gitlab.com:batuhan-basoglu/Hospital-Management-System.git"
 
-  codeberg:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Mirror to Codeberg
-        uses: wearerequired/git-mirror-action@v1
-        env:
-          SSH_PRIVATE_KEY: ${{ secrets.ACTIONS_SSH_KEY }}
-        with:
-          source-repo: "git@github.com:batuhan-basoglu/Hospital-Management-System.git"
-          destination-repo: "git@codeberg.org:batuhan-basoglu/Hospital-Management-System.git"
-
   forgejo:
     runs-on: ubuntu-latest
     steps:
